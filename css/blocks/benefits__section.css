@@ -1,0 +1,10 @@
+.benefits__section {
+  position: relative;
+}
+.benefits__section::before {
+  content: url("../../img/advantages/decor.svg");
+  position: absolute;
+  bottom: -1.5rem;
+  left: 12%;
+  z-index: 1;
+}

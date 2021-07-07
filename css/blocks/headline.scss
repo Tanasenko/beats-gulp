@@ -1,0 +1,22 @@
+.headline {
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 1.125rem;
+}
+
+.hedline__subtitle {
+  padding: 0 18%;
+  margin-bottom: 3.875rem;
+}
+
+@media (max-width: 480px) {
+  .headline__title {
+    margin-bottom: 0.6875rem;
+  }
+
+  .hedline__subtitle {
+    padding: 0 5%;
+  }
+}

@@ -1,0 +1,11 @@
+.revews__section {
+  position: relative;
+
+  &::before {
+    content: url("../../img/advantages/ellipse_dec.svg");
+    position: absolute;
+    bottom: -1.5rem;
+    left: 15%;
+    z-index: 1;
+  }
+}

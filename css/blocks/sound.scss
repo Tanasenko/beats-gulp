@@ -1,0 +1,45 @@
+.sound {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font: 1px;
+}
+
+.sound__btn {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-right: 12px;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #e01f3d;
+    position: absolute;
+    display: block;
+    left: -1px;
+    top: 49%;
+    transform: translateY(-50%) rotate(42deg);
+    z-index: 2;
+    opacity: 0;
+    transition: opaciry 0.3s;
+  }
+
+  &.active {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.sound__mic {
+  cursor: pointer;
+  height: 16px;
+  width: 13px;
+}
+
+.sound__volume {
+  display: flex;
+  align-items: center;
+}

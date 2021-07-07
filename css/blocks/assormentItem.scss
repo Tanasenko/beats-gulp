@@ -1,0 +1,181 @@
+.slider {
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.assortment__list {
+  display: flex;
+  position: relative;
+  will-change: right;
+  transition: right 0.3s;
+}
+
+.assortment__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+}
+
+.assortment__img {
+  flex-shrink: 0;
+  width: 50%;
+  margin-right: 59px;
+}
+
+.assortiment__icon {
+  width: 28.25rem;
+  height: 28.25rem;
+}
+
+.assortment__info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.assortment__description {
+  width: 5.6875rem;
+  height: 5.6875rem;
+  background: #9a9a9a;
+  background-repeat: 0.16rem;
+  position: relative;
+  margin-bottom: 1.5625rem;
+  position: relative;
+
+  &:hover {
+    .description__list {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+.assortment__property {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.property__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5.375rem;
+}
+
+.assortment__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.assortment__text {
+  color: #666666;
+  margin-bottom: 1.6875rem;
+}
+
+.property__title {
+  color: #666666;
+}
+
+.property__text {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
+}
+
+.assortment__offer {
+  display: flex;
+  align-items: center;
+}
+
+.assortment__price {
+  font-size: 2.25rem;
+  color: #151515;
+  margin-right: 0.8125rem;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .assortment__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .assortment__img {
+    width: 19.125rem;
+    height: 19.125rem;
+    margin-right: 0;
+    margin-bottom: 3.0625rem;
+  }
+
+  .assortiment__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .assortment__info {
+    width: 100%;
+  }
+
+  .assortment__title {
+    font-size: 28px;
+    margin-bottom: 0.875rem;
+  }
+
+  .assortment__description {
+    display: none;
+  }
+
+  .assortment__property {
+    justify-content: center;
+    padding-left: 10%;
+  }
+
+  .property__item {
+    text-align: left;
+  }
+
+  .assortment__offer {
+    justify-content: center;
+  }
+
+  .assortment__price {
+    font-size: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .assortment__img {
+    margin-bottom: 1.625rem;
+  }
+
+  .assortment__info {
+    width: 26rem;
+  }
+
+  .assortment__title {
+    margin-bottom: 0.8125rem;
+  }
+
+  .assortment__text {
+    margin-bottom: 25px;
+  }
+
+  .assortment__price {
+    margin-right: 1.5rem;
+  }
+}

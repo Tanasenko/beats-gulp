@@ -1,0 +1,8 @@
+.delivery_section {
+  background: #181818;
+  color: #fff;
+  position: relative;
+}
+.delivery_section .section__title {
+  color: #fff;
+}

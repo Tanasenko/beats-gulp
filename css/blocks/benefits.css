@@ -1,0 +1,114 @@
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.benefits__item::before {
+  content: url("../../img/advantages/shape.svg");
+  position: absolute;
+  top: 3.938rem;
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child::before {
+  display: none;
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit__img {
+  margin-bottom: 1.5rem;
+}
+
+.benefit__img-wrapper {
+  display: inline-block;
+  width: 7.875rem;
+  height: 7.875rem;
+  position: relative;
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__icon {
+  height: 4.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-bottom: 1.5rem;
+}
+
+.battery,
+.sound,
+.time {
+  width: 4.25rem;
+  height: 4.25rem;
+}
+
+.benefit__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.438rem;
+}
+
+.benefit__desc {
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .benefits__item::before {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .benefit__title {
+    font-size: 1.5rem;
+  }
+
+  .benefits__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .benefit__img {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}

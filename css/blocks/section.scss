@@ -1,0 +1,40 @@
+.section {
+  height: 100vh;
+  min-height: 40.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  color: #292929;
+
+  &--colors {
+    color: #fff;
+    color: #fff;
+    position: absolute;
+    top: 115px;
+    left: 84px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    min-height: 51rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    min-height: 50rem;
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+}

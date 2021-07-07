@@ -1,0 +1,69 @@
+.video {
+  background: #f8faf9;
+  position: relative;
+
+  &::before {
+    content: url("../../img/player/dec.svg");
+    position: absolute;
+    bottom: -1.5rem;
+    right: 15%;
+    z-index: 1;
+  }
+}
+
+.video__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 41.375rem;
+  height: 24.4375rem;
+}
+
+.video__player {
+  position: relative;
+  width: 100%;
+}
+
+.video__window {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.video__player-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 82px;
+  height: 118px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+
+  &--active {
+    opacity: 0;
+  }
+}
+
+.video__toolbar {
+  width: 100%;
+  height: 2.1875rem;
+  background: #151515;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-left: 1.0625rem;
+  padding-right: 1.4375rem;
+}
+
+.video__toolbar-duration {
+  margin-right: 1.5rem;
+}

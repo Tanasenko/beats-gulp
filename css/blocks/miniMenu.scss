@@ -1,0 +1,26 @@
+.mini-menu {
+  background: #313131;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none;
+  padding-top: 30%;
+}
+
+.mini {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .menu__item {
+    font-family: Play;
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1.875rem;
+    margin-right: 0;
+  }
+}

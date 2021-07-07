@@ -1,0 +1,27 @@
+.botton {
+  padding: 1.125rem 2.562rem;
+  border-radius: 6.25rem;
+  border: none;
+  max-width: 10.188rem;
+  text-decoration: none;
+}
+.botton--theme--red {
+  background-color: #e01f3d;
+  color: #fff;
+  padding: 1.313rem 2.563rem;
+}
+.botton--theme--red:hover {
+  background-color: #ca1b36;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.botton--theme--transparent {
+  background-color: transparent;
+  color: #fff;
+}
+.botton--theme--transparent:hover {
+  background-color: transparent;
+  color: #ca1b36;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}

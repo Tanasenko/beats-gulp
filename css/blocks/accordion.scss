@@ -1,0 +1,48 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 0;
+  overflow: hidden;
+  top: 100%;
+  transition: 0.3s;
+  position: absolute;
+
+  &--active {
+    min-height: 5rem;
+  }
+}
+
+.accordion__title {
+  margin-bottom: 0.25rem;
+}
+
+.accordion__text {
+  color: #666666;
+
+  &.team__list--mobile {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    position: relative;
+  }
+
+  .accordion__iner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion__title {
+    font-weight: 700;
+  }
+
+  .team__list--mobile .accordion__text {
+    width: 55%;
+  }
+}

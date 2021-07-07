@@ -1,0 +1,35 @@
+.mini-menu {
+  background: #313131;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: none;
+  padding-top: 30%;
+}
+
+.mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mini .menu__item {
+  font-family: Play;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 1.875rem;
+  margin-right: 0;
+}

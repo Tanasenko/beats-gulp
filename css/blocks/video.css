@@ -1,0 +1,89 @@
+.video {
+  background: #f8faf9;
+  position: relative;
+}
+.video::before {
+  content: url("../../img/player/dec.svg");
+  position: absolute;
+  bottom: -1.5rem;
+  right: 15%;
+  z-index: 1;
+}
+
+.video__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 41.375rem;
+  height: 24.4375rem;
+}
+
+.video__player {
+  position: relative;
+  width: 100%;
+}
+
+.video__window {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.video__player-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 82px;
+  height: 118px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.video__player-img--active {
+  opacity: 0;
+}
+
+.video__toolbar {
+  width: 100%;
+  height: 2.1875rem;
+  background: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-left: 1.0625rem;
+  padding-right: 1.4375rem;
+}
+
+.video__toolbar-duration {
+  margin-right: 1.5rem;
+}

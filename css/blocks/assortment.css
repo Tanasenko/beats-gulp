@@ -1,0 +1,66 @@
+.assortment {
+  background: #f8faf9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.assortment::before {
+  content: url("../../img/assortment/decor.svg");
+  position: absolute;
+  bottom: -1.5rem;
+  right: 10%;
+}
+
+.assortment__control {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 13.5px;
+  height: 1.6875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.assortment__control--left {
+  left: -4%;
+  margin-left: 0.84375rem;
+}
+
+.assortment__control--right {
+  right: -4%;
+  margin-right: 0.84375rem;
+}
+
+@media (max-width: 768px) {
+  .assortment__control--left {
+    left: 9%;
+    top: 26%;
+  }
+
+  .assortment__control--right {
+    right: 9%;
+    top: 26%;
+  }
+}
+@media (max-width: 480px) {
+  .assortment__control--left {
+    left: 5%;
+    top: 20%;
+  }
+
+  .assortment__control--right {
+    right: 5%;
+    top: 20%;
+  }
+}
