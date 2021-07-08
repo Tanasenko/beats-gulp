@@ -1,4 +1,3 @@
-$(document).ready(() => {
     (function () {
         const mesureWidth = item => {
         let reqItemWidth = 0;
@@ -67,5 +66,3 @@ $(document).ready(() => {
     })
 
     
-
-});

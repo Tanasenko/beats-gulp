@@ -1,4 +1,3 @@
-$(document).ready(() => {
     (function () {
         const findBlockByAlias = alias => {
             return $('.reviews__display').filter((ndx, item) =>{
@@ -20,5 +19,3 @@ $(document).ready(() => {
     }) 
     })
     
-
-});

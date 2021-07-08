@@ -32,20 +32,26 @@ task('copy:html', () => {
 });
 
 task('copy:jpg', () => {
-    return src('img/**/*.jpg')
-    .pipe(dest('dist'))
+    return src('./img/**/*.jpg')
+    .pipe(dest('dist/img'))
     .pipe(reload({stream: true}));
 });
 
 task('copy:png', () => {
-    return src('img/**/*.png')
-    .pipe(dest('dist'))
+    return src('./img/**/*.png')
+    .pipe(dest('dist/img'))
     .pipe(reload({stream: true}));
 });
 
 task('copy:svg', () => {
-    return src('img/**/*.svg')
-    .pipe(dest('dist'))
+    return src('./img/**/*.svg')
+    .pipe(dest('dist/img'))
+    .pipe(reload({stream: true}));
+});
+
+task('copy:mp4', () => {
+    return src('./img/**/*.mp4')
+    .pipe(dest('dist/img'))
     .pipe(reload({stream: true}));
 });
 
@@ -114,7 +120,7 @@ task(
     'default', 
     series(
         'clean', 
-        parallel('copy:html', 'copy:jpg', 'copy:png', 'copy:svg', 'styles', 'scripts'),
+        parallel('copy:html', 'copy:jpg', 'copy:png', 'copy:svg', 'copy:mp4', 'styles', 'scripts'),
         parallel('watch','server')
     )
 );
